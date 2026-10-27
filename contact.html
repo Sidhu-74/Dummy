@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Sidharth</title>
+  <meta name="description" content="Get in touch with Sidharth.">
+  <meta name="theme-color" content="#f7f5f1">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23161616'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23f7f5f1' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main">
+        <a class="logo" href="index.html">Sidharth<span>.</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow reveal">Contact</p>
+        <h1 class="display reveal">Let's make something <em>good.</em></h1>
+        <p class="lead reveal">Tell me about your project, role or idea. I usually reply within a couple of days.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container contact-grid">
+        <ul class="contact-links reveal">
+          <li>
+            <small>Email</small>
+            <a href="mailto:hello@sidharth.design">hello@sidharth.design <span class="arrow" aria-hidden="true">→</span></a>
+          </li>
+          <li>
+            <small>LinkedIn</small>
+            <a href="https://www.linkedin.com/in/sidharth" target="_blank" rel="noopener">/in/sidharth <span class="arrow" aria-hidden="true">↗</span></a>
+          </li>
+        </ul>
+
+        <form class="form reveal" id="contact-form" data-to="hello@sidharth.design" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+              <span class="field-error" id="name-error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-error">
+              <span class="field-error" id="email-error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="type">What's this about?</label>
+            <select id="type" name="type">
+              <option value="">Choose one (optional)</option>
+              <option>Full-time role</option>
+              <option>Freelance project</option>
+              <option>Just saying hello</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
+            <span class="field-error" id="message-error" aria-live="polite"></span>
+          </div>
+          <div>
+            <button class="btn" type="submit">Send message <span class="arrow" aria-hidden="true">→</span></button>
+          </div>
+          <p class="form-status" id="form-status" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p style="margin:0">&copy; <span id="year">2026</span> Sidharth. Product Designer.</p>
+      <div class="footer-links">
+        <a href="mailto:hello@sidharth.design">Email</a>
+        <a href="https://www.linkedin.com/in/sidharth" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
